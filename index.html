@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="navbar">
+        <header>
+            <a class="logo" href="index.html">Iqbaal<span>muhmd</span></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Work</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="/resume/cv.pdf">Resume</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="hero">
+        <div class="content">
+            <p class="title">Hello, I'm Arif Iqbal</p>
+            <p>I am passionate about <span class="colored">UX Design</span></p>
+            <p>Currently <span class="colored">Unemployed</span></p>
+            <div class="about-cta">
+                <a href="about.html" class="primary-cta">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="featured-work">
+        <div class="work-container">
+            <ul>
+                <div class="left-col">
+                    <li>
+                        <a href="#"><img class="img-project" src="/images/project1.png" alt="Project 1"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="img-project" src="/images/project2.png" alt="Project 2"></a>
+                    </li>
+                </div>
+                <div class="right-col">
+                    <li>
+                        <a href="#"><img class="img-project" src="/images/project3.png" alt="Project 3"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="img-project" src="/images/project4.png" alt="Project 4"></a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </section>
+
+    <p class="footer">Like what you see? <a href="#">Hire Me!</a></p>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js" integrity="sha512-CPA5LMoJI/a5HkSIAKcBtFXe4gqGjPUL2ExF/3PmhrrHI17wod9xOqqF+0WZQRKIIq0KwF8oG5BaiWobtrke3A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        var tl = gsap.timeline();
+
+
+        gsap.from(".content",{
+            stagger: .2,
+            scale: .1,
+            duration: 1,
+            ease: Back.easeOut.config(1.7)
+        })
+    </script>
+</body>
+</html>
