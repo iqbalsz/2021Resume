@@ -107,6 +107,10 @@ section {
             color: white;
         }
     }
+
+    .left-col-ab {
+        margin-top: 2em;
+    }
 }
 
 #projects{
@@ -114,6 +118,9 @@ section {
     
     position: relative;
     text-align: center;
+    .article-container{
+        margin-top: 2em;
+    }
     .experience-details-container{
         display: flex;
         flex-direction: column;
@@ -260,13 +267,13 @@ section {
         justify-content: space-between;
 
         .left-col-ab {
-            margin-top: 8em;
-            padding: 0 0 0 13em;
+            margin-top: 5em;
+            padding: 0 0 0 3em;
         }
 
         .right-col-ab {
             margin-top: 1em;
-            padding: 0 12em 0 4em;
+            padding: 0 8em 0 4em;
         }
 
     }
